@@ -8,17 +8,17 @@ create table MW_WAYS
 )
 ;
 comment on table MW_WAYS
-  is 'Вариант пути';
+  is 'Р’Р°СЂРёР°РЅС‚ РїСѓС‚Рё';
 comment on column MW_WAYS.way_id
-  is 'Идентификатор (суррогатный)';
+  is 'РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ (СЃСѓСЂСЂРѕРіР°С‚РЅС‹Р№)';
 comment on column MW_WAYS.way_psp_id
-  is 'Ссылка на ID паспорта';
+  is 'РЎСЃС‹Р»РєР° РЅР° ID РїР°СЃРїРѕСЂС‚Р°';
 comment on column MW_WAYS.way_code
-  is 'Код пути (в рамках паспорта). Например, 1F, 1R, 10F';
+  is 'РљРѕРґ РїСѓС‚Рё (РІ СЂР°РјРєР°С… РїР°СЃРїРѕСЂС‚Р°). РќР°РїСЂРёРјРµСЂ, 1F, 1R, 10F';
 comment on column MW_WAYS.way_desc
-  is 'Описание варианта пути';
+  is 'РћРїРёСЃР°РЅРёРµ РІР°СЂРёР°РЅС‚Р° РїСѓС‚Рё';
 comment on column MW_WAYS.way_circle_yn
-  is 'Признак кольцевого пути (Y - кольцевой, N -  обычный)';
+  is 'РџСЂРёР·РЅР°Рє РєРѕР»СЊС†РµРІРѕРіРѕ РїСѓС‚Рё (Y - РєРѕР»СЊС†РµРІРѕР№, N -  РѕР±С‹С‡РЅС‹Р№)';
 alter table MW_WAYS
   add constraint MW_WAYS_PK primary key (WAY_ID);
 alter table MW_WAYS

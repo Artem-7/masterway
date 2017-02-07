@@ -9,19 +9,19 @@ create table MW_PASSPORTS
 )
 ;
 comment on table MW_PASSPORTS
-  is 'Паспорт маршрута';
+  is 'РџР°СЃРїРѕСЂС‚ РјР°СЂС€СЂСѓС‚Р°';
 comment on column MW_PASSPORTS.psp_id
-  is 'Идентификатор (суррогатный)';
+  is 'РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ (СЃСѓСЂСЂРѕРіР°С‚РЅС‹Р№)';
 comment on column MW_PASSPORTS.psp_route_num
-  is 'Номер маршрута';
+  is 'РќРѕРјРµСЂ РјР°СЂС€СЂСѓС‚Р°';
 comment on column MW_PASSPORTS.psp_desc
-  is 'Описание маршрута';
+  is 'РћРїРёСЃР°РЅРёРµ РјР°СЂС€СЂСѓС‚Р°';
 comment on column MW_PASSPORTS.psp_registry_num
-  is 'Номер в реестре';
+  is 'РќРѕРјРµСЂ РІ СЂРµРµСЃС‚СЂРµ';
 comment on column MW_PASSPORTS.psp_st_id
-  is 'Тип транспорта. Значения из справочника ';
+  is 'РўРёРї С‚СЂР°РЅСЃРїРѕСЂС‚Р°. Р—РЅР°С‡РµРЅРёСЏ РёР· СЃРїСЂР°РІРѕС‡РЅРёРєР° ';
 comment on column MW_PASSPORTS.psp_rt_id
-  is 'Тип административно территориальной единицы, вид маршрута. ';
+  is 'РўРёРї Р°РґРјРёРЅРёСЃС‚СЂР°С‚РёРІРЅРѕ С‚РµСЂСЂРёС‚РѕСЂРёР°Р»СЊРЅРѕР№ РµРґРёРЅРёС†С‹, РІРёРґ РјР°СЂС€СЂСѓС‚Р°. ';
 alter table MW_PASSPORTS
   add constraint MW_PSP_PK primary key (PSP_ID);
 alter table MW_PASSPORTS

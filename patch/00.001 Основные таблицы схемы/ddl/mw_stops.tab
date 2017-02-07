@@ -10,21 +10,21 @@ create table MW_STOPS
 )
 ;
 comment on table MW_STOPS
-  is 'Остановки';
+  is 'РћСЃС‚Р°РЅРѕРІРєРё';
 comment on column MW_STOPS.st_id
-  is 'Идентификатор (суррогатный)';
+  is 'РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ (СЃСѓСЂСЂРѕРіР°С‚РЅС‹Р№)';
 comment on column MW_STOPS.st_okato
-  is 'Код ОКАТО';
+  is 'РљРѕРґ РћРљРђРўРћ';
 comment on column MW_STOPS.st_name
-  is 'Название остановки';
+  is 'РќР°Р·РІР°РЅРёРµ РѕСЃС‚Р°РЅРѕРІРєРё';
 comment on column MW_STOPS.st_short_name
-  is 'Краткое название';
+  is 'РљСЂР°С‚РєРѕРµ РЅР°Р·РІР°РЅРёРµ';
 comment on column MW_STOPS.st_street
-  is 'Улица';
+  is 'РЈР»РёС†Р°';
 comment on column MW_STOPS.st_mcp_id
-  is 'Ссылка на системный идентификатор муниципального образования';
+  is 'РЎСЃС‹Р»РєР° РЅР° СЃРёСЃС‚РµРјРЅС‹Р№ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РјСѓРЅРёС†РёРїР°Р»СЊРЅРѕРіРѕ РѕР±СЂР°Р·РѕРІР°РЅРёСЏ';
 comment on column MW_STOPS.st_active_yn
-  is 'Статус  (''DELETED'' - удалено, ''BLOCKED'' - заблокировано, ''ACTIVE'' - активно)';
+  is 'РЎС‚Р°С‚СѓСЃ  (''DELETED'' - СѓРґР°Р»РµРЅРѕ, ''BLOCKED'' - Р·Р°Р±Р»РѕРєРёСЂРѕРІР°РЅРѕ, ''ACTIVE'' - Р°РєС‚РёРІРЅРѕ)';
 alter table MW_STOPS
   add constraint ST_ID primary key (ST_ID);
 alter table MW_STOPS

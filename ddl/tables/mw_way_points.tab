@@ -9,19 +9,19 @@ create table MW_WAY_POINTS
 )
 ;
 comment on table MW_WAY_POINTS
-  is 'Остановки варианта пути';
+  is 'РћСЃС‚Р°РЅРѕРІРєРё РІР°СЂРёР°РЅС‚Р° РїСѓС‚Рё';
 comment on column MW_WAY_POINTS.wpt_id
-  is 'Идентификатор (суррогатный)';
+  is 'РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ (СЃСѓСЂСЂРѕРіР°С‚РЅС‹Р№)';
 comment on column MW_WAY_POINTS.wpt_way_id
-  is 'Ссылка на идентификатор варианта пути';
+  is 'РЎСЃС‹Р»РєР° РЅР° РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІР°СЂРёР°РЅС‚Р° РїСѓС‚Рё';
 comment on column MW_WAY_POINTS.wpt_order_num
-  is 'Порядковый номер остановки на варианте пути';
+  is 'РџРѕСЂСЏРґРєРѕРІС‹Р№ РЅРѕРјРµСЂ РѕСЃС‚Р°РЅРѕРІРєРё РЅР° РІР°СЂРёР°РЅС‚Рµ РїСѓС‚Рё';
 comment on column MW_WAY_POINTS.wpt_spt_id
-  is 'Ссылка на идентификатр остановочного пункта';
+  is 'РЎСЃС‹Р»РєР° РЅР° РёРґРµРЅС‚РёС„РёРєР°С‚СЂ РѕСЃС‚Р°РЅРѕРІРѕС‡РЅРѕРіРѕ РїСѓРЅРєС‚Р°';
 comment on column MW_WAY_POINTS.wpt_distance
-  is 'Расстояние до следующей остановки';
+  is 'Р Р°СЃСЃС‚РѕСЏРЅРёРµ РґРѕ СЃР»РµРґСѓСЋС‰РµР№ РѕСЃС‚Р°РЅРѕРІРєРё';
 comment on column MW_WAY_POINTS.wpt_zone_num
-  is 'Номер зоны в рамках варианта пути';          
+  is 'РќРѕРјРµСЂ Р·РѕРЅС‹ РІ СЂР°РјРєР°С… РІР°СЂРёР°РЅС‚Р° РїСѓС‚Рё';          
 alter table MW_WAY_POINTS
   add constraint MW_WPT_PK primary key (WPT_ID);
 alter table MW_WAY_POINTS

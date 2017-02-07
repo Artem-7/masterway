@@ -11,23 +11,23 @@ create table MW_STOP_POINTS
 )
 ;
 comment on table MW_STOP_POINTS
-  is 'Остановочные пункты';
+  is 'РћСЃС‚Р°РЅРѕРІРѕС‡РЅС‹Рµ РїСѓРЅРєС‚С‹';
 comment on column MW_STOP_POINTS.spt_id
-  is 'Идентификатор (суррогатный)';
+  is 'РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ (СЃСѓСЂСЂРѕРіР°С‚РЅС‹Р№)';
 comment on column MW_STOP_POINTS.spt_st_id
-  is 'Ссылка на системный идентификатор остановки';
+  is 'РЎСЃС‹Р»РєР° РЅР° СЃРёСЃС‚РµРјРЅС‹Р№ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РѕСЃС‚Р°РЅРѕРІРєРё';
 comment on column MW_STOP_POINTS.spt_registry_num
-  is 'Номер пункта по реестру';
+  is 'РќРѕРјРµСЂ РїСѓРЅРєС‚Р° РїРѕ СЂРµРµСЃС‚СЂСѓ';
 comment on column MW_STOP_POINTS.spt_latitude
-  is 'Координаты остановки широта';
+  is 'РљРѕРѕСЂРґРёРЅР°С‚С‹ РѕСЃС‚Р°РЅРѕРІРєРё С€РёСЂРѕС‚Р°';
 comment on column MW_STOP_POINTS.spt_longitude
-  is 'Координаты остановки долгота';
+  is 'РљРѕРѕСЂРґРёРЅР°С‚С‹ РѕСЃС‚Р°РЅРѕРІРєРё РґРѕР»РіРѕС‚Р°';
 comment on column MW_STOP_POINTS.spt_radius
-  is 'Координаты остановки погрешность';
+  is 'РљРѕРѕСЂРґРёРЅР°С‚С‹ РѕСЃС‚Р°РЅРѕРІРєРё РїРѕРіСЂРµС€РЅРѕСЃС‚СЊ';
 comment on column MW_STOP_POINTS.spt_active_yn
-  is 'Статус  (''DELETED'' - удалено, ''BLOCKED'' - заблокировано, ''ACTIVE'' - активно)';
+  is 'РЎС‚Р°С‚СѓСЃ  (''DELETED'' - СѓРґР°Р»РµРЅРѕ, ''BLOCKED'' - Р·Р°Р±Р»РѕРєРёСЂРѕРІР°РЅРѕ, ''ACTIVE'' - Р°РєС‚РёРІРЅРѕ)';
 comment on column MW_STOP_POINTS.spt_order_num
-  is 'Порядковый номер пункта в пределах остановки';
+  is 'РџРѕСЂСЏРґРєРѕРІС‹Р№ РЅРѕРјРµСЂ РїСѓРЅРєС‚Р° РІ РїСЂРµРґРµР»Р°С… РѕСЃС‚Р°РЅРѕРІРєРё';
 alter table MW_STOP_POINTS
   add constraint MW_SPT_PK primary key (SPT_ID);
 alter table MW_STOP_POINTS

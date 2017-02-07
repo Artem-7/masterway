@@ -8,17 +8,17 @@ create table MW_TARIFFS
 )
 ;
 comment on table MW_TARIFFS
-  is 'Тарифы';
+  is 'РўР°СЂРёС„С‹';
 comment on column MW_TARIFFS.tar_id
-  is 'Идентификатор (суррогатный)';
+  is 'РРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ (СЃСѓСЂСЂРѕРіР°С‚РЅС‹Р№)';
 comment on column MW_TARIFFS.tar_rt_id
-  is 'Ссылка на идентификатор варианта маршрута';
+  is 'РЎСЃС‹Р»РєР° РЅР° РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂ РІР°СЂРёР°РЅС‚Р° РјР°СЂС€СЂСѓС‚Р°';
 comment on column MW_TARIFFS.tar_zone_num_from
-  is 'Номер зоны от';
+  is 'РќРѕРјРµСЂ Р·РѕРЅС‹ РѕС‚';
 comment on column MW_TARIFFS.tar_zone_num_to
-  is 'Номер зоны до';
+  is 'РќРѕРјРµСЂ Р·РѕРЅС‹ РґРѕ';
 comment on column MW_TARIFFS.tar_tariff
-  is 'Значение тарифа (в копейках)';
+  is 'Р—РЅР°С‡РµРЅРёРµ С‚Р°СЂРёС„Р° (РІ РєРѕРїРµР№РєР°С…)';
        
 alter table MW_TARIFFS
   add constraint MW_TAR_PK primary key (TAR_ID);
