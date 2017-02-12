@@ -1,4 +1,4 @@
-create table MW_PASSPORTS
+create table RS_PASSPORTS
 (
   psp_id           NUMBER not null,
   psp_route_num    VARCHAR2(10) not null,
@@ -8,21 +8,22 @@ create table MW_PASSPORTS
   psp_rt_id        NUMBER(3) not null
 )
 ;
-comment on table MW_PASSPORTS
+comment on table RS_PASSPORTS
   is 'Паспорт маршрута';
-comment on column MW_PASSPORTS.psp_id
+comment on column RS_PASSPORTS.psp_id
   is 'Идентификатор (суррогатный)';
-comment on column MW_PASSPORTS.psp_route_num
+comment on column RS_PASSPORTS.psp_route_num
   is 'Номер маршрута';
-comment on column MW_PASSPORTS.psp_desc
+comment on column RS_PASSPORTS.psp_desc
   is 'Описание маршрута';
-comment on column MW_PASSPORTS.psp_registry_num
+comment on column RS_PASSPORTS.psp_registry_num
   is 'Номер в реестре';
-comment on column MW_PASSPORTS.psp_st_id
+comment on column RS_PASSPORTS.psp_st_id
   is 'Тип транспорта. Значения из справочника ';
-comment on column MW_PASSPORTS.psp_rt_id
+comment on column RS_PASSPORTS.psp_rt_id
   is 'Тип административно территориальной единицы, вид маршрута. ';
-alter table MW_PASSPORTS
-  add constraint MW_PSP_PK primary key (PSP_ID);
-alter table MW_PASSPORTS
-  add constraint MW_PSP_COMP_UK_01 unique (PSP_ROUTE_NUM, PSP_ST_ID);
+alter table RS_PASSPORTS
+  add constraint RS_PSP_PK primary key (PSP_ID);
+alter table RS_PASSPORTS
+  add constraint RS_PSP_COMP_UK_01 unique (PSP_ROUTE_NUM, PSP_ST_ID);
+

@@ -1,4 +1,4 @@
-create table MW_STOPS
+create table RS_STOPS
 (
   st_id         NUMBER not null,
   st_okato      VARCHAR2(20),
@@ -9,24 +9,26 @@ create table MW_STOPS
   st_active_yn  CHAR(1) default 'Y' not null
 )
 ;
-comment on table MW_STOPS
+comment on table RS_STOPS
   is 'Остановки';
-comment on column MW_STOPS.st_id
+comment on column RS_STOPS.st_id
   is 'Идентификатор (суррогатный)';
-comment on column MW_STOPS.st_okato
+comment on column RS_STOPS.st_okato
   is 'Код ОКАТО';
-comment on column MW_STOPS.st_name
+comment on column RS_STOPS.st_name
   is 'Название остановки';
-comment on column MW_STOPS.st_short_name
+comment on column RS_STOPS.st_short_name
   is 'Краткое название';
-comment on column MW_STOPS.st_street
+comment on column RS_STOPS.st_street
   is 'Улица';
-comment on column MW_STOPS.st_mcp_id
+comment on column RS_STOPS.st_mcp_id
   is 'Ссылка на системный идентификатор муниципального образования';
-comment on column MW_STOPS.st_active_yn
+comment on column RS_STOPS.st_active_yn
   is 'Статус  (''DELETED'' - удалено, ''BLOCKED'' - заблокировано, ''ACTIVE'' - активно)';
-alter table MW_STOPS
+create unique index RS_ST_PK on RS_STOPS (ST_ID);
+alter table RS_STOPS
   add constraint ST_ID primary key (ST_ID);
-alter table MW_STOPS
-  add constraint MW_ST_ACTIVE_YN_CK
+alter table RS_STOPS
+  add constraint RS_ST_ACTIVE_YN_CK
   check (ST_ACTIVE_YN IN ('Y', 'N'));
+

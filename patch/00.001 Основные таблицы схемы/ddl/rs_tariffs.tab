@@ -1,4 +1,4 @@
-create table MW_TARIFFS
+create table RS_TARIFFS
 (
   tar_id            NUMBER not null,
   tar_rt_id         NUMBER not null,
@@ -7,21 +7,21 @@ create table MW_TARIFFS
   tar_tariff        NUMBER
 )
 ;
-comment on table MW_TARIFFS
+comment on table RS_TARIFFS
   is 'Тарифы';
-comment on column MW_TARIFFS.tar_id
+comment on column RS_TARIFFS.tar_id
   is 'Идентификатор (суррогатный)';
-comment on column MW_TARIFFS.tar_rt_id
+comment on column RS_TARIFFS.tar_rt_id
   is 'Ссылка на идентификатор варианта маршрута';
-comment on column MW_TARIFFS.tar_zone_num_from
+comment on column RS_TARIFFS.tar_zone_num_from
   is 'Номер зоны от';
-comment on column MW_TARIFFS.tar_zone_num_to
+comment on column RS_TARIFFS.tar_zone_num_to
   is 'Номер зоны до';
-comment on column MW_TARIFFS.tar_tariff
+comment on column RS_TARIFFS.tar_tariff
   is 'Значение тарифа (в копейках)';
-       
-alter table MW_TARIFFS
-  add constraint MW_TAR_PK primary key (TAR_ID);
-alter table MW_TARIFFS
-  add constraint MW_TAR_RT_ID_FK foreign key (TAR_RT_ID)
-  references MW_ROUTES (RT_ID);
+alter table RS_TARIFFS
+  add constraint RS_TAR_PK primary key (TAR_ID);
+alter table RS_TARIFFS
+  add constraint RS_TAR_RT_ID_FK foreign key (TAR_RT_ID)
+  references RS_ROUTES (RT_ID);
+
